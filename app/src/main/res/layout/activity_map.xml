@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reqPermsMapPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".common.fire.map.MapActivity">
+
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/arrow_back_vector"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewTitle"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/karma_bold"
+        android:text="@string/map"
+        android:textColor="@color/colorPrimary"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonBack"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/map"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLine4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewLine4"
+        android:layout_width="411dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="150dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/karma_bold"
+        android:text="@string/confirm_location_btn"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLine4" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="330dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/karma_bold"
+        android:text="@string/cancel_btn"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConfirm" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

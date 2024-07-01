@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/permissionRequestPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".common.fire.CreateFireActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/karma_bold"
+        android:text="@string/perm_req"
+        android:textColor="@color/colorPrimary"
+        android:textSize="34sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollViewRequest"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLine4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scrollViewConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/karma_bold"
+                android:text="@string/type_asterisc"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16dp"
+                android:checkedButton="@+id/radioTypeButton"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewType" />
+
+            <TextView
+                android:id="@+id/textViewMotive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/karma_bold"
+                android:text="@string/motive_asterisc"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupType" />
+
+            <Spinner
+                android:id="@+id/spinnerReason"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMotive" />
+
+            <TextView
+                android:id="@+id/textViewLine"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerReason" />
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/karma_bold"
+                android:text="@string/date_asterisc"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLine" />
+
+            <TextView
+                android:id="@+id/textViewDateShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/karma_medium"
+                android:text="@string/create_fire_date"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+            <TextView
+                android:id="@+id/textViewLine2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDateShow" />
+
+            <ImageButton
+                android:id="@+id/imageButtonDate"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/calendar_vector"
+                app:layout_constraintBottom_toTopOf="@+id/textViewLine2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDate"
+                app:srcCompat="@drawable/calendar" />
+
+            <TextView
+                android:id="@+id/textViewSuppTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/karma_bold"
+                android:text="@string/supp_team_question"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLine2" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSuppTeam"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSuppTeam">
+
+                <RadioButton
+                    android:id="@+id/radioButtonYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:checked="true"
+                    android:fontFamily="@font/karma_medium"
+                    android:text="@string/yes"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="135dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:checked="false"
+                    android:fontFamily="@font/karma_medium"
+                    android:text="@string/no"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textViewLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/karma_bold"
+                android:text="@string/location"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupSuppTeam" />
+
+            <Button
+                android:id="@+id/buttonPostCode"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/requests_btn"
+                android:text="@string/post_code"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLocation" />
+
+            <Button
+                android:id="@+id/buttonMap"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="220dp"
+                android:background="@drawable/requests_btn"
+                android:text="@string/map"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/buttonPostCode" />
+
+            <TextView
+                android:id="@+id/textViewYourLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/karma_bold"
+                android:text="@string/your_location"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonMap"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textViewOutputLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/karma_bold"
+                android:lineSpacingMultiplier="0.8"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewYourLocation"
+                app:layout_constraintTop_toBottomOf="@+id/buttonMap" />
+
+            <TextView
+                android:id="@+id/textViewUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/karma_bold"
+                android:text="@string/user_asteric"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewYourLocation" />
+            <Button
+                android:id="@+id/buttonUser"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/requests_btn"
+                android:text="@string/get_user"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewUser" />
+
+            <TextView
+                android:id="@+id/textViewSelectUer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/karma_bold"
+                android:text="@string/user_colon"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonUser"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textViewSelectedUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/karma_bold"
+                android:lineSpacingMultiplier="0.8"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewSelectUer"
+                app:layout_constraintTop_toBottomOf="@+id/buttonUser" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textViewLine4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/karma_bold"
+            android:text="@string/register_btn"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLine4" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/karma_bold"
+            android:text="@string/cancel_btn"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

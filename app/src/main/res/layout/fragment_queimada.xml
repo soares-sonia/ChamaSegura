@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/queimadaFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".common.fire.fragment.QueimadaFragment">
+
+    <TextView
+        android:id="@+id/textViewFireTech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/karma_bold"
+        android:text="@string/controlled_fire_tech"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFireTechHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/karma_medium"
+        android:text="@string/controlled_fire_tech"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFireTech" />
+
+    <TextView
+        android:id="@+id/textViewLine"
+        android:layout_width="379dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFireTechHeader" />
+
+    <ImageButton
+        android:id="@+id/imageButtonDropDownFireTech"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/drop_down_vector"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_drop_down_24" />
+
+    <TextView
+        android:id="@+id/textViewArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/karma_bold"
+        android:text="@string/area_question"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLine" />
+
+    <TextView
+        android:id="@+id/textViewLine2"
+        android:layout_width="379dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="114dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/coords_example"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

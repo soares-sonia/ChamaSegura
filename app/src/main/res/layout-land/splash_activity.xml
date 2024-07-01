@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/queima_segura" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/playfair_display"
+        android:text="CHAMA SEGURA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#EF4F30"
+        android:textSize="48sp"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/fogob"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/fogob" />
+
+</LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".common.register.RegisterActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/arrow_back_vector"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/progressBar"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="@string/create_acc_2"
+        android:textColor="@color/colorPrimary"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:srcCompat="@drawable/profile"
+        android:contentDescription="TODO" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/add_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageViewProfile"
+        app:srcCompat="@drawable/icon__plus_" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/full_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProfile" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        style="@style/CustomEditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hintext"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewName"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/textViewNif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/nif"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextName" />
+
+    <EditText
+        android:id="@+id/editTextNif"
+        style="@style/CustomEditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:hint="@string/nif"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hintext"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNif"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/textViewPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/phone"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNif" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        style="@style/CustomEditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hintext"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhone"
+        android:autofillHints="" />
+
+    <LinearLayout
+        android:id="@+id/signUpPromptLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone">
+
+        <TextView
+            android:id="@+id/textViewSignUpPromptPart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_prompt"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/clickHereButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:text="@string/click"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewLine4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFinish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFinish"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/karma_bold"
+        android:text="@string/finish_btn"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

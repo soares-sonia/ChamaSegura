@@ -1,0 +1,178 @@
+<resources>
+    <string name="app_name" translatable="false">ChamaSegura</string>
+    <string name="home_welcome">Hi</string>
+    <string name="pending_req">Pending Requests</string>
+    <string name="fire_prevented">Fires Prevented</string>
+    <string name="curr_req">Current Request</string>
+    <string name="no_reqs">No Requests</string>
+    <string name="req">Requests</string>
+    <string name="req_state">State</string>
+    <string name="req_approved">Approved</string>
+    <string name="req_pending">Pending</string>
+    <string name="reqnot_approved">Not Approved</string>
+    <string name="clear_filters_btn">Clear Filters</string>
+    <string name="profile">Profile</string>
+    <string name="name">Name</string>
+    <string name="nif" translatable="false">NIF</string>
+    <string name="profile_edit_btn">Edit Profile</string>
+    <string name="log_out_btn">Sign Out</string>
+    <string name="queima">Bonfire</string>
+    <string name="queimada">Burn</string>
+    <string name="type_asterisc">Type*</string>
+    <string name="motive_asterisc">Motive*</string>
+    <string name="date_asterisc">Date*</string>
+    <string name="supp_team_colon">Support Team:</string>
+    <string name="district">District</string>
+    <string name="phone">Phone Number</string>
+    <string name="post_code">Postcode</string>
+    <string name="state">State</string>
+    <string name="fire_tech">Fire Technician</string>
+    <string name="area_colon">Area:</string>
+    <string name="municipality">Municipality</string>
+    <string name="rules">Rules</string>
+    <string name="start_date">Starting Date</string>
+    <string name="end_date">Ending Date</string>
+    <string name="users">Users</string>
+    <string name="username">Username</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="users_header_type">Type</string>
+    <string name="users_edit_btn">Edit</string>
+    <string name="add_btn">Add</string>
+    <string name="delete_btn">Delete</string>
+    <string name="user_perm">User</string>
+    <string name="manager_perm">Manager</string>
+    <string name="admin_perm" translatable="false">Admin</string>
+    <string name="intro_txt_1">View statistics. The most recently approved request. Create new requests.</string>
+    <string name="intro_txt_2">Place new requests, using a postcode or a map.</string>
+    <string name="intro_txt_3">Check information about your requests.</string>
+    <string name="create_acc">Create Account</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_acc_2">Complete your Profile</string>
+    <string name="full_name">Full Name</string>
+    <string name="finish_btn">Finish</string>
+    <string name="perm_req">Permission Request</string>
+    <string name="supp_team_question">Need a support team?*</string>
+    <string name="location">Location*</string>
+    <string name="map">Map</string>
+    <string name="post_code_txt">Postcode/Location:</string>
+    <string name="lat" translatable="false">Latitude:</string>
+    <string name="lon" translatable="false">Longitude:</string>
+    <string name="register_btn">Register</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="confirm_location_btn">Confirm Location</string>
+    <string name="controlled_fire_tech">Controlled Fire Technician</string>
+    <string name="title_activity_request" translatable="false">RequestActivity</string>
+    <string name="arrow_back_vector">Back</string>
+    <string name="type_colon">Type:</string>
+    <string name="motive_colon">Motive:</string>
+    <string name="date_colon">Date:</string>
+    <string name="motive">Motive</string>
+    <string name="date">Date</string>
+    <string name="drop_down_vector">Open Menu</string>
+    <string name="calendar_vector">Calendar</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="postcode_example_1" translatable="false">XXXX-XXX</string>
+    <string name="coords_example" translatable="false">XXX.XXXXXX</string>
+    <string name="click">Click Here!</string>
+    <string name="sign_up_prompt">"If you don’t have an account. "</string>
+    <string name="login">Login</string>
+    <string name="login_desc">Please introduce your email and password to sign in</string>
+    <string name="sign_in_prompt">If you already have an account.</string>
+    <string name="area_question">Introduce Burning Area:</string>
+    <string name="supp_team">Support Teams</string>
+    <string name="fire">Fire</string>
+    <string name="continue_btn">Continue</string>
+    <string name="type">Type</string>
+    <string name="marker_boundaries_toast">Please place a marker within Portugal boundaries!</string>
+    <string name="coords_not_selected_toast">A location must be selected!</string>
+    <string name="Requests">Requests</string>
+    <string name="confirm_btn">Confirm</string>
+    <string name="leave_edit_mode">Leave edit mode</string>
+
+
+    <!-- General -->
+    <string name="filter">Filter</string>
+    <string name="server_error">Server Error</string>
+    <string name="district_colon">District:</string>
+    <string name="phone_colon">Phone Number:</string>
+    <string name="post_code_colon">Postcode:</string>
+    <string name="state_colon">State:</string>
+    <string name="fire_tech_colon">Fire Technician:</string>
+    <string name="fires_approved">Fires Approved</string>
+    <string name="create_req">Create Request</string>
+    <string name="Date_Ex" translatable="false">DD/MM/YYYY</string>
+    <string name="no_internet_available">No Internet Available</string>
+
+
+    <!-- Variables -->
+    <string name="fire_types_burning">Bonfire</string>
+    <string name="fire_status_large_burning">Burn</string>
+    <string name="fire_status_scheduled">Scheduled</string>
+    <string name="fire_status_ongoing">Ongoing</string>
+    <string name="fire_status_completed">Completed</string>
+    <string name="fire_status_pending">Pending</string>
+    <string name="fire_status_approved">Approved</string>
+    <string name="fire_status_refuse">Not Approved</string>
+    <string name="admin">Admin</string>
+    <string name="manager">Manger</string>
+    <string name="user">User</string>
+
+    <!-- Login Activity -->
+    <string name="login_message_success">Login Successful</string>
+
+    <!-- Register Activity -->
+    <string name="register_message_success">Account Created</string>
+
+    <!-- Main Activity -->
+    <string name="main_error_controller">Properties not found, turn on internet access</string>
+    <string name="main_error_auth">No session found, turn on internet access</string>
+    <string name="main_error_login">Account accessed from other device, please login again</string>
+
+    <!-- Profile Activity -->
+    <string name="profile_unknown">Unknown</string>
+    <string name="your_location">Your Location:</string>
+
+    <!-- Create Fire Activity -->
+    <string name="create_fire_date">Selected Date: </string>u
+    <string name="create_fire_message">Request Created Successfully</string>
+    <string name="create_fire_error_location">Location cannot be empty</string>
+    <string name="create_fire_error_date">Date cannot be empty</string>
+    <string name="ban_btn" translatable="false">Ban/Unban</string>
+    <string name="active_filter">Active</string>
+    <string name="banned_filter">Banned</string>
+    <string name="del_filter">Deleted</string>
+    <string name="user_asteric">User*</string>
+    <string name="user_colon">User:</string>
+    <string name="get_user">Get User</string>
+
+    <!--  Details Activity -->
+    <string name="details_activity_location">Location: </string>
+    <string name="details_activity_motive">Reason: </string>
+    <string name="details_activity_date">Date: </string>
+    <string name="details_activity_state">State: </string>
+    <string name="details_activity_obs">Observations: </string>
+    <string name="details_activity_suport_team">Support Team:</string>
+    <string name="details_activity_fire_tech">Fire Technician:</string>
+    <string name="details_activity_area">Area:</string>
+    <string name="details_activity_message">Request Removed</string>
+
+
+    <!-- Admin Users Activity -->
+    <string name="admin_button_edit_message">Select an user to edit</string>
+    <string name="admin_button_delete_message">Select an user to delete/restore</string>
+    <string name="admin_button_ban_message">Select an user to ban/unban</string>
+    <string name="admin_title_edit_perms">Edit Permissions</string>
+
+
+
+    <string name="create_fire_error_user">User cannot be empty</string>
+
+
+
+
+
+
+</resources>

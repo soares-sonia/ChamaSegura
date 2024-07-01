@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/suppTeamFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".common.reqPerm.fragment.SuppTeamFragment">
+
+    <TextView
+        android:id="@+id/textViewSuppTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/karma_bold"
+        android:text="@string/supp_team"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSuppTeamHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/karma_medium"
+        android:text="@string/supp_team"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSuppTeam" />
+
+    <TextView
+        android:id="@+id/textViewLine"
+        android:layout_width="379dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSuppTeamHeader" />
+
+    <ImageButton
+        android:id="@+id/imageButtonDropDownSuppTeam"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/drop_down_vector"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_drop_down_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

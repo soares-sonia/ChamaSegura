@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_welcome">Olá</string>
+    <string name="pending_req">Pedidos Pendentes</string>
+    <string name="fire_prevented">Incêncios Evitados</string>
+    <string name="curr_req">Pedido Atual</string>
+    <string name="no_reqs">Sem Pedidos</string>
+    <string name="req">Pedidos</string>
+    <string name="req_state">Estado</string>
+    <string name="req_approved">Aprovado</string>
+    <string name="req_pending">Pendente</string>
+    <string name="reqnot_approved">Não Aprovado</string>
+    <string name="clear_filters_btn">Limpar Filtros</string>
+    <string name="profile">Perfil</string>
+    <string name="name">Nome</string>
+    <string name="profile_edit_btn">Editar Perfil</string>
+    <string name="log_out_btn">Terminar Sessão</string>
+    <string name="queima">Queima</string>
+    <string name="queimada">Queimada</string>
+    <string name="type_asterisc">Tipo*</string>
+    <string name="motive_asterisc">Motivo*</string>
+    <string name="date_asterisc">Data*</string>
+    <string name="supp_team_colon">Equipa de Apoio:</string>
+    <string name="district">Distrito</string>
+    <string name="phone">Telemóvel</string>
+    <string name="post_code">Código Postal</string>
+    <string name="state">Estado</string>
+    <string name="fire_tech">Técnico de Fogo</string>
+    <string name="area_colon">Área:</string>
+    <string name="municipality">Município</string>
+    <string name="rules">Regras</string>
+    <string name="start_date">Data de Início</string>
+    <string name="end_date">Data de Fim</string>
+    <string name="users">Utilizadores</string>
+    <string name="users_header_type">Tipo</string>
+    <string name="users_edit_btn">Editar</string>
+    <string name="add_btn">Adicionar</string>
+    <string name="delete_btn">Eliminar</string>
+    <string name="user_perm">Utilizador</string>
+    <string name="manager_perm">Gestor</string>
+    <string name="intro_txt_1">Veja as estatísticas em tempo real e faça a gestão dos pedidos de forma eficiente</string>
+    <string name="intro_txt_2">Faça pedidos, apartir do código postal ou utilizando um mapa.</string>
+    <string name="intro_txt_3">Confira informação sobre os seus pedidos.</string>
+    <string name="create_acc">Criar Conta</string>
+    <string name="confirm_password">Confirmar Palavra Passe</string>
+    <string name="create_acc_2">Completa o Teu Perfil</string>
+    <string name="full_name">Nome Completo</string>
+    <string name="finish_btn">Finalizar</string>
+    <string name="perm_req">Pedido de Permissão</string>
+    <string name="supp_team_question">Necessita de Equipa de Apoio?*</string>
+    <string name="location">Localização*</string>
+    <string name="map">Mapa</string>
+    <string name="post_code_txt">Código Postal/Localização:</string>
+    <string name="register_btn">Registar</string>
+    <string name="cancel_btn">Cancelar</string>
+    <string name="confirm_location_btn">Confirmar Localização</string>
+    <string name="controlled_fire_tech">Técnico de Fogo Controlado</string>
+    <string name="arrow_back_vector">Atás</string>
+    <string name="type_colon">Tipo:</string>
+    <string name="motive_colon">Motivo:</string>
+    <string name="date_colon">Date:</string>
+    <string name="motive">Motivo</string>
+    <string name="date">Data</string>
+    <string name="drop_down_vector">Abrir Menu</string>
+    <string name="calendar_vector">Calendário</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="click">Clique Aqui!</string>
+    <string name="sign_up_prompt">"Se não tiver conta. "</string>
+    <string name="username">Nome de Utilizador</string>
+    <string name="password">Palavra Passe</string>
+    <string name="login">Iniciar Sessão</string>
+    <string name="login_desc">Por favor introduza o seu email e palavra passe para iniciar sessão</string>
+    <string name="sign_in_prompt">Se já tiver conta.</string>
+    <string name="area_question">Introduza Área de Queima:</string>
+    <string name="supp_team">Equipas de Apoio</string>
+    <string name="fire">Fogo</string>
+    <string name="continue_btn">Continua</string>
+    <string name="type">Tipo:</string>
+    <string name="marker_boundaries_toast">Por favor coloque o marcador dentro dos limites de Portugal!</string>
+    <string name="coords_not_selected_toast">Uma localização deve ser selecionada!</string>
+    <string name="Requests">Pedidos</string>
+    <string name="confirm_btn">Confirmar</string>
+    <string name="leave_edit_mode">Sair do mode de edição</string>
+
+    <!-- General -->
+    <string name="filter">Filter</string>
+    <string name="server_error">Server Error</string>
+    <string name="district_colon">Distrito:</string>
+    <string name="phone_colon">Telemovel:</string>
+    <string name="post_code_colon">Código Postal:</string>
+    <string name="state_colon">Estado:</string>
+    <string name="fire_tech_colon">Técnico de Fogo:</string>
+    <string name="fires_approved">Queimadas Aprovadas</string>
+    <string name="create_req">Criar Pedido</string>
+    <string name="no_internet_available">Sem Internet</string>
+
+    <!-- Variables -->
+    <string name="fire_types_burning">Queima</string>
+    <string name="fire_status_large_burning">Queimada</string>
+    <string name="fire_status_scheduled">Agendado</string>
+    <string name="fire_status_ongoing">Em Andamento</string>
+    <string name="fire_status_completed">Concluído</string>
+    <string name="fire_status_pending">Pendente</string>
+    <string name="fire_status_approved">Aprovado</string>
+    <string name="fire_status_refuse">Não Aprovado</string>
+    <string name="admin">Administrador</string>
+    <string name="manager">Gestor</string>
+    <string name="user">Utilizador</string>
+
+    <!-- Login Activity -->
+    <string name="login_message_success">Login Efetuado</string>
+
+    <!-- Register Activity -->
+    <string name="register_message_success">Conta Criada</string>
+
+    <!-- Main Activity -->
+    <string name="main_error_controller">Propriedades não encontradas, ligar acesso a internet</string>
+    <string name="main_error_auth">Sessão não encontrada, ligar acesso a internet</string>
+    <string name="main_error_login">Conta acedidade por outro despositivo, por favor logar novamente</string>
+
+    <!-- Profile Activity -->
+    <string name="profile_unknown">Desconhecido</string>
+    <string name="your_location">A sua Localização:</string>
+
+    <!-- Create Fire Activity -->
+    <string name="create_fire_date">Data Selecionada: </string>
+    <string name="create_fire_message">Pedido Criado com Sucesso</string>
+    <string name="create_fire_error_location">Localização não pode ser vazia</string>
+    <string name="create_fire_error_date">Data não pode ser vazia</string>
+    <string name="active_filter">Ativo</string>
+    <string name="banned_filter">Banido</string>
+    <string name="del_filter">Eliminado</string>
+    <string name="user_asteric">Utilizador*</string>
+    <string name="user_colon">Utilizador:</string>
+    <string name="get_user">Obter Utilizador</string>
+
+    <!--  Details Activity -->
+    <string name="details_activity_location">Localização: </string>
+    <string name="details_activity_motive">Motivo: </string>
+    <string name="details_activity_state">Estado: </string>
+    <string name="details_activity_date">Data: </string>
+    <string name="details_activity_obs">Observações: </string>
+    <string name="details_activity_suport_team">Equipa de Apoio</string>
+    <string name="details_activity_fire_tech">Técnico de Fogo:</string>
+    <string name="details_activity_area">Área:</string>
+    <string name="details_activity_message">Pedido Removido</string>
+
+
+    <!-- Admin Users Activity -->
+    <string name="admin_button_edit_message">Selecione um utilizador para editar</string>
+    <string name="admin_button_delete_message">Selecione um utilizador para eleminar/restaurar</string>
+    <string name="admin_button_ban_message">Selecione um utilizador para banir/desbanir</string>
+    <string name="admin_title_edit_perms">Editar Permissões</string>
+
+    <string name="create_fire_error_user">Utilizador não pode ser vazio</string>
+
+</resources>

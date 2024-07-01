@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.queimasegura">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QueimaSegura">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Common Activities -->
+        <activity
+            android:name=".common.fire.search.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".common.register.CompleteInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".common.fire.CreateFireActivity"
+            android:exported="true"
+            android:label="@string/title_activity_request"
+            android:theme="@style/Theme.QueimaSegura"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".common.fire.map.MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".common.intro.IntroSliderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".common.login.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".common.register.RegisterActivity"
+            android:exported="false" />
+        <activity android:name=".common.detail.queima.QueimaDetailsActivity"
+            android:exported="false" />
+        <activity android:name=".common.detail.queimada.QueimadaDetailsActivity"
+            android:exported="false" />
+
+        <!-- User Activities -->
+        <activity
+            android:name=".user.UserActivity"
+            android:exported="true" />
+
+        <!-- Manager Activities -->
+        <activity android:name=".manager.ManagerActivity"
+            android:exported="false" />
+        <activity android:name=".manager.ProfileActivity"
+            android:exported="false" />
+
+        <!-- Admin Activities -->
+        <activity android:name=".admin.AdminActivity"
+            android:exported="false" />
+        <activity android:name=".admin.fragments.home.fire.CreateFireActivity"
+            android:exported="false" />
+        <activity android:name=".admin.fragments.home.fire.search.user.SearchUserActivity"
+            android:exported="false" />
+        <activity android:name=".admin.fragments.home.fire.search.zip.SearchActivity"
+            android:exported="false" />
+        <activity android:name=".admin.fragments.home.fire.map.MapActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC746C5NQx0CL7ojLDomKyxthRmiSw7jW0" />
+
+    </application>
+
+</manifest>
